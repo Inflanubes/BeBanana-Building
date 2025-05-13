@@ -26,7 +26,7 @@
     .text-section {
       width: 100%;
       height: 33vh;
-      min-height: 400px;
+
       overflow: hidden;
     }
 
@@ -89,21 +89,84 @@
     }
 
     .info-section h2 {
-      font-size: clamp(1rem, 1.5vw, 1.1rem);
+      font-size: 2rem;
       margin-bottom: 1rem;
       padding-top: 0%;
       font-weight: 600;
     }
 
     .info-section p {
-      font-size: clamp(0.6rem, 1.2vw, 1rem);
+      font-size: 0.8rem;
       max-width: 80vh;
-      margin: 1rem 1rem;
+      margin: 1rem auto;
     }
 
     .space{
         height: 33vh;
     }
+
+
+    @media (max-width: 768px) {
+      .main-title {
+        font-size: 2rem;
+      }
+      .center-text-wrapper {
+        padding: 1rem;
+      }
+      .info-section h2 {
+        font-size: 1.3rem;
+      }
+      .info-section p {
+        font-size: 0.6rem;
+        margin: 1rem;
+        max-width: 95%;
+      }
+      .insta-link {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+      }
+    }
+
+    @media (max-width: 425px) {
+    .h1{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .text-section{
+        height: 65vw;
+    }
+      .main-title {
+        font-size: 1.5rem;
+        height: 5vh;
+        margin-bottom: 0;
+      }
+      .center-text-wrapper {
+        padding: 1rem;
+      }
+      .info-section h2 {
+        font-size: 1.3rem;
+      }
+      .info-section p {
+        font-size: 0.55rem;
+        margin: 0.5rem;
+        max-width: 95%;
+      }
+      .insta-link {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+      }
+    }
+
+    @media (max-width: 375px) {
+        .h1{
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .text-section{
+            height: 73vw;
+        }
+    }
+    
   </style>
 </head>
 <body>
@@ -116,8 +179,8 @@
     <div class="center-text-wrapper">
       <h1 class="main-title">Web-builders working</h1>
       <a href="https://instagram.com/letsbebanana" target="_blank" class="btn btn-outline-light">
-  <i class="bi bi-instagram"></i> Contact on Instagram
-</a>
+        <i class="bi bi-instagram"></i> Contact on Instagram
+      </a>
     </div>
   </section>
 
@@ -128,7 +191,7 @@
     <p>¿Que os pedimos? seguid informándonos de todos los errores que hayais visto y montad, montad mucho que os puedan hacer muchas fotos para nuestra vuelta.</p>
     <p>¿Que estamos haciendo? Hemos contratado un mayor ancho de banda y estamos migrando a un nuevo servidor, por ello paramos la web para poder cambiar, pero tranquilos, vuestros datos no se van a perder.</p>
     <p>Muy pronto podrás acceder nuevamente para encontrar tus fotos fácilmente con nuestra tecnología de búsqueda inteligente. Gracias por tu paciencia.</p>
-    <p>Os informaremos a través de Instagram. Podeis contactar con nosotros del mismo modo o vía mail. Muchas gracias por vuestra paciencia.</p>
+    <p>Os informaremos a través de <a href="https://instagram.com/letsbebanana">Instagram</a> Podeis contactar con nosotros del mismo modo o vía mail info@letsbebanana.com. Muchas gracias por vuestra paciencia.</p>
     <p>¡Muchas gracias por vuestra paciencia Bananaers!</p>
   </section>
 
